@@ -1,0 +1,11 @@
+﻿Taps | Speed  | Poor Dex Prob | Dexterity Level
+-------------------------------------------------------
+   3  |   0.6  |    0.870     | Severe Impairment
+   5  |   1.0  |    0.817     | Severe Impairment
+   8  |   1.6  |    0.730     | Moderate Impairment
+  10  |   2.0  |    0.650     | Moderate Impairment
+  15  |   3.0  |    0.450     | Mild Impairment
+  20  |   4.0  |    0.300     | Mild Impairment
+  25  |   5.0  |    0.150     | Normal
+  30  |   6.0  |    0.117     | Normal
+  40  |   8.0  |    0.050     | Normal

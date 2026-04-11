@@ -1,0 +1,46 @@
+{
+  "visual_results": {
+    "inflamed_probability": 0.15,
+    "non_inflamed_probability": 0.85,
+    "features": {
+      "redness_ratio": 1.0,
+      "warmth_index": 1.0,
+      "saturation_variance": 50.0,
+      "edge_density": 0.12
+    }
+  },
+  "motor_results": {
+    "poor_dexterity_probability": 0.57,
+    "normal_dexterity_probability": 0.43,
+    "dexterity_level": "Moderate Impairment",
+    "tapping_speed": 2.4
+  },
+  "acoustic_results": {
+    "crepitus_probability": 0.395,
+    "no_crepitus_probability": 0.605,
+    "interpretation": "Mild crepitus detected",
+    "features": {
+      "spectral_centroid": 1200.0,
+      "zero_crossing_rate": 0.06,
+      "mfcc_energy": 12.0,
+      "rms_variance": 0.006,
+      "duration_seconds": 3.0
+    }
+  },
+  "overall_risk": {
+    "risk_score": 0.101,
+    "risk_level": "Low Risk",
+    "fusion_method": "Naive Bayes (log-odds fusion)",
+    "weights": {
+      "visual": 0.45,
+      "motor": 0.3,
+      "acoustic": 0.25
+    },
+    "prior": 0.2,
+    "fusion_details": {
+      "visual_inflamed_contribution": 0.15,
+      "motor_poor_dexterity_contribution": 0.57,
+      "acoustic_crepitus_contribution": 0.395
+    }
+  }
+}
