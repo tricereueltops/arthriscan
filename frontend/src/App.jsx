@@ -46,7 +46,7 @@ function App() {
         formData.append('audio', data.audioBlob, 'recording.webm');
       }
 
-      const response = await fetch('http://localhost:8000/api/analyze', {
+      const response = await fetch('https://arthriscan.onrender.com/api/analyze', {
         method: 'POST',
         body: formData,
       });
@@ -65,7 +65,7 @@ function App() {
     } catch (err) {
       clearInterval(stepInterval);
       console.error(err);
-      setError('Cannot reach backend. Is the Python server running on :8000?');
+      setError('Cannot reach backend. The server may be starting up — please try again in a moment.');
       setIsLoading(false);
     }
   };
